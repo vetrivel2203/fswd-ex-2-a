@@ -3,25 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Post Board</title>
+  <title>QuickBite Food Delivery</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <main class="container">
-    <h1>My Post Board</h1>
-    <p>Write a message and add it to the board.</p>
+  <header class="header">
+    <h1>QuickBite</h1>
+    <a href="#cart">Cart: <span id="cart-count">0</span></a>
+  </header>
 
-    <form id="postForm">
-      <label for="postText">Your message</label>
-      <textarea id="postText" placeholder="Type something..." required></textarea>
-      <button type="submit">Add Post</button>
-    </form>
+  <main>
+    <section class="hero">
+      <h2>Good food, delivered fast.</h2>
+      <p>Choose your favorites and add them to your cart.</p>
+    </section>
 
     <section>
-      <h2>Posts</h2>
-      <ul id="posts"></ul>
+      <h2>Our Menu</h2>
+      <div id="menu" class="menu"></div>
+    </section>
+
+    <section id="cart" class="cart">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <p class="total">Total: ₹<span id="cart-total">0</span></p>
+      <button id="place-order">Place demo order</button>
+      <p id="message" aria-live="polite"></p>
     </section>
   </main>
+
+  <footer>QuickBite · Demo website</footer>
 </body>
 </html>
