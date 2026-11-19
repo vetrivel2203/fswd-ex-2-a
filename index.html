@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Food Delivery</title>
-    <link rel="stylesheet" href="hotel.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Post Board</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <main class="container">
+    <h1>My Post Board</h1>
+    <p>Write a message and add it to the board.</p>
 
-<div class="container">
+    <form id="postForm">
+      <label for="postText">Your message</label>
+      <textarea id="postText" placeholder="Type something..." required></textarea>
+      <button type="submit">Add Post</button>
+    </form>
 
-    <h1>🍔 Food Delivery</h1>
-
-    <div id="foods"></div>
-
-    <h2>🛒 Cart</h2>
-
-    <div id="cart"></div>
-
-    <h3>Total: ₹<span id="total">0</span></h3>
-
-</div>
-
-<script src="hotel.js"></script>
+    <section>
+      <h2>Posts</h2>
+      <ul id="posts"></ul>
+    </section>
+  </main>
 </body>
 </html>
